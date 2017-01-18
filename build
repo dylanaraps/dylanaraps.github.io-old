@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#
+# Turn a collection of markdown files into a website.
+
+for page in src/pages/*.md; do
+    out_file="${page/*\/}"
+    out_file="${out_file/\.md}"
+    pandoc -o "pages/${out_file}.html" --template "templates/post.html" --smart -- "$page"
+done
