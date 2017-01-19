@@ -685,7 +685,11 @@ body {
 
 /* }}} */
 
+
 /* My CSS {{{ */
+
+
+/* Nav bar {{{ */
 
 .site-nav ul,
 .site-nav li {
@@ -717,4 +721,36 @@ body {
     margin: 20px 20px 20px 0;
 }
 
+.site-nav li.right {
+    margin: 20px 0 20px 20px;
+}
+
 /* }}} */
+
+/* General Styles {{{ */
+
+.right {
+    float: right;
+}
+
+[href*="rice"] img {
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+}
+
+/* }}} */
+
+/* Media Queries {{{ */
+
+@media all and (max-width: 450px) {
+    li.right {
+        display: none;
+    }
+}
+
+/* }}} */
+
+
+/* }}} */
+
