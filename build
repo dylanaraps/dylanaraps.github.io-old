@@ -12,7 +12,20 @@ pandoc_cmd() {
     done
 }
 
+sassc_cmd() {
+    [[ "$1" ]] && mkdir -p "$1" || return
+
+    for css in src/"$1"/*.scss; do
+        dir="${css/src}"
+        printf "%s\n" "Generating .${dir/\.scss}.css..."
+        sassc --style compressed -- "$css" > ".${dir/\.scss}.css"
+    done
+}
+
 # Generate pages.
 pandoc_cmd "pages"
 pandoc_cmd "pages/rice"
 pandoc_cmd "."
+
+# Minify css.
+sassc_cmd "css"

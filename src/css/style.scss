@@ -691,39 +691,36 @@ body {
 
 /* Nav bar {{{ */
 
-.site-nav ul,
-.site-nav li {
-    margin: 0;
-    padding: 0;
-}
-
-.site-nav a {
-    text-decoration: none;
-}
-
-.site-nav a:hover {
-    text-decoration: underline;
-}
-
 .site-nav {
     height: 50px;
     margin: 0 auto;
     max-width: 980px;
     overflow: hidden;
     width: 95%;
-}
 
-.site-nav ul {
-    display: block;
-}
+    ul,
+    li {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
 
-.site-nav li {
-    display: inline-block;
-    margin: 20px 20px 20px 0;
-}
+    li {
+        display: inline-block;
+        margin: 20px 20px 20px 0;
 
-.site-nav li.right {
-    margin: 20px 0 20px 20px;
+        &.right {
+            margin: 20px 0 20px 20px;
+        }
+    }
+
+    a {
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
 
 /* }}} */
