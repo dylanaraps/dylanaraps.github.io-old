@@ -15,4 +15,4 @@ pandoc_cmd() {
 # Generate pages.
 pandoc_cmd "pages"
 pandoc_cmd "pages/rice"
-pandoc_cmd ""
+pandoc_cmd "."
