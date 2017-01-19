@@ -2,22 +2,17 @@
 #
 # Turn a collection of markdown files into a website.
 
-# TODO (Make this a proper script).
+pandoc_cmd() {
+    [[ "$1" ]] && mkdir -p "$1" || return
 
-# Main pages
-for page in src/pages/*.md; do
-    out_file="${page/*\/}"
-    pandoc -o "pages/${out_file/\.md}.html" --template "src/templates/post.html" --smart -- "$page"
-done
+    for page in src/"$1"/*.md; do
+        dir="${page/src}"
+        printf "%s\n" "Generating .${dir/\.md}.html..."
+        pandoc -o ".${dir/\.md}.html" --template "src/templates/post.html" --smart -- "$page"
+    done
+}
 
-# Sub pages
-for page in src/pages/rice/*.md; do
-    out_file="${page/*\/}"
-    pandoc -o "pages/rice/${out_file/\.md}.html" --template "src/templates/post.html" --smart -- "$page"
-done
-
-# Sub pages
-for page in src/*.md; do
-    out_file="${page/*\/}"
-    pandoc -o "${out_file/\.md}.html" --template "src/templates/post.html" --smart -- "$page"
-done
+# Generate pages.
+pandoc_cmd "pages"
+pandoc_cmd "pages/rice"
+pandoc_cmd ""
