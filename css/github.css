@@ -709,6 +709,7 @@ body {
     height: 50px;
     margin: 0 auto;
     max-width: 980px;
+    overflow: hidden;
     width: 95%;
 }
 
@@ -737,16 +738,6 @@ body {
     object-fit: cover;
     height: 200px;
     width: 100%;
-}
-
-/* }}} */
-
-/* Media Queries {{{ */
-
-@media all and (max-width: 450px) {
-    li.right {
-        display: none;
-    }
 }
 
 /* }}} */
