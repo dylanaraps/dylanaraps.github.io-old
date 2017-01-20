@@ -2,6 +2,7 @@
 
 My personal website.
 
+
 ### Notes
 
 - The `html` is generated using `pandoc` and a series of markdown files.
@@ -10,6 +11,29 @@ My personal website.
 - The `style.scss` file contains a minimal version of Github's `css` styles.
 - Hey, I'm lazy.
 - Also, fuck `html`. :)
+
+
+### Dependencies
+
+**Build script**
+
+- `bash`
+- `pandoc`
+- `sassc`
+
+**Local web server**
+
+- `python`
+
+
+### Usage
+
+1. Start local server.
+    - `python3 -m http.server`
+2. Modify `.md` files in `/src`.
+3. Modify `.scss` files in `/src/scss`.
+4. Run the build script to generate `html`/`css`.
+    - `./build`.
 
 
 ### Thanks
