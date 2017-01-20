@@ -33,10 +33,9 @@ My personal website.
 2. Modify `.md` files in `/src`.
 3. Modify `.scss` files in `/src/scss`.
 4. Run the build script to generate `html`/`css`.
-    - `./build`.
+    - `./build`
 
 
 ### Thanks
 
-- github-markdown-css
-    - https://github.com/sindresorhus/github-markdown-css
+- https://github.com/sindresorhus/github-markdown-css
