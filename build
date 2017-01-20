@@ -2,17 +2,23 @@
 #
 # Turn a collection of markdown files into a website.
 
-pandoc_cmd() {
+gen_html() {
     [[ "$1" ]] && mkdir -p "$1" || return
 
     for page in src/"$1"/*.md; do
         dir="${page/src}"
         printf "%s\n" "Generating .${dir/\.md}.html..."
+
+        # Generate html files.
         pandoc -o ".${dir/\.md}.html" --template "src/templates/post.html" --smart -- "$page"
+
+        # Minify html files.
+        sed -i 's/^[ \t]*//g; s/[ \t]*$//g;' ".${dir/\.md}.html"
+        sed -i ':a;N;$!ba;s/\n/ /g' ".${dir/\.md}.html"
     done
 }
 
-sassc_cmd() {
+gen_css() {
     [[ "$1" ]] && mkdir -p "$1" || return
 
     for css in src/"$1"/*.scss; do
@@ -23,9 +29,9 @@ sassc_cmd() {
 }
 
 # Generate pages.
-pandoc_cmd "pages"
-pandoc_cmd "pages/rice"
-pandoc_cmd "."
+gen_html "pages"
+gen_html "pages/rice"
+gen_html "."
 
 # Minify css.
-sassc_cmd "css"
+gen_css "css"
