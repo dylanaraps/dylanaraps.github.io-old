@@ -695,10 +695,9 @@ body {
 /* Nav bar {{{ */
 
 .site-nav {
-    height: 50px;
+    min-height: 50px;
     margin: 0 auto;
     max-width: 980px;
-    overflow: hidden;
     width: 95%;
 
     ul,
@@ -742,6 +741,27 @@ body {
     object-fit: cover;
     min-width: 100%;
     width: 100%;
+}
+
+/* }}} */
+
+/* Media Queries {{{ */
+
+
+@media screen and (max-width: 500px) {
+    .site-nav li {
+        margin: 20px 10px 0 0;
+    }
+
+    .markdown-body h1 {
+        padding-top: 25px;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .site-nav .right {
+        display: none;
+    }
 }
 
 /* }}} */
