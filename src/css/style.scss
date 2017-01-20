@@ -705,14 +705,17 @@ body {
         display: block;
         margin: 0;
         padding: 0;
+        vertical-align: middle;
     }
 
     li {
         display: inline-block;
         margin: 20px 20px 20px 0;
 
-        &.right {
-            margin: 20px 0 20px 20px;
+        &:first-child {
+            font-family: Georgia,Times,Times New Roman,serif;
+            font-size: 25px;
+            font-weight: 800;
         }
     }
 
@@ -728,10 +731,6 @@ body {
 /* }}} */
 
 /* General Styles {{{ */
-
-.right {
-    float: right;
-}
 
 [href*="rice"] img {
     height: 200px;

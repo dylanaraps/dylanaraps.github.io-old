@@ -3,7 +3,7 @@
 # Turn a collection of markdown files into a website.
 
 gen_html() {
-    [[ "$1" != "." ]] && mkdir -p "$1" || return
+    mkdir -p "$1" 2>/dev/null
 
     for page in src/"$1"/*.md; do
         dir="${page/src}"
@@ -19,7 +19,7 @@ gen_html() {
 }
 
 gen_css() {
-    [[ "$1" != "." ]] && mkdir -p "$1" || return
+    mkdir -p "$1" 2>/dev/null
 
     for css in src/"$1"/*.scss; do
         dir="${css/src}"
