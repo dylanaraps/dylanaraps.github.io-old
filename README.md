@@ -11,3 +11,8 @@ My personal website.
 - Hey, I'm lazy.
 - Also, fuck `html`. :)
 
+
+### Thanks
+
+- github-markdown-css
+    - https://github.com/sindresorhus/github-markdown-css
