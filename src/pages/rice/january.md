@@ -1,8 +1,8 @@
 ---
-title: 'January 2017'
+title: '2017-01'
 ---
 
-# January 2017
+# 2017-01
 
 [Wallpapers](http://imgur.com/a/eBgPo)
 
