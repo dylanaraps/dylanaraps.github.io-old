@@ -9,12 +9,6 @@ title: 'Photos'
 ![](http://imgur.com/nBWsYt0.jpg)
 
 
-<!-- Night Market -->
-
-![](http://imgur.com/SYAchmm.jpg)
-![](http://imgur.com/qoJdYJd.jpg)
-
-
 <!-- Kitty -->
 
 ![](http://imgur.com/GCd52up.jpg)
