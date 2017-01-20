@@ -29,9 +29,12 @@ gen_css() {
 }
 
 # Generate pages.
-gen_html "pages"
-gen_html "pages/rice"
-gen_html "."
+gen_html "pages" &
+gen_html "pages/rice" &
+gen_html "." &
 
 # Minify css.
-gen_css "css"
+gen_css "css" &
+
+# Wait for script to finish.
+wait
