@@ -22,7 +22,6 @@ title: 'Photos'
 
 <!-- Fish and Chips -->
 
-![](http://imgur.com/GcYBHBu.jpg)
 ![](http://imgur.com/fU1SEFQ.jpg)
 
 
