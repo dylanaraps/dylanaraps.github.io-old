@@ -9,5 +9,5 @@ My personal website.
 - The `build` script converts the markdown files to html files and generates `css`.
 - The `style.scss` file contains a minimal version of Github's `css` styles.
 - Hey, I'm lazy.
-- Also, fuck html. :)
+- Also, fuck `html`. :)
 
