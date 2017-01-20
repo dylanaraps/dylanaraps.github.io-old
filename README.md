@@ -1,12 +1,13 @@
-# dylanaraps.com
+# [dylanaraps.com](http://dylanaraps.com)
 
 My personal website.
 
 ### Notes
 
-- This site is generated using `pandoc` and a series of markdown files.
-- The `build` script converts the markdown files to html files.
-- Inside the `css` folder is a `css` file that includes Github's `css` styles.
+- The `html` is generated using `pandoc` and a series of markdown files.
+- The `css`  is generated using `sassc` and `scss`.
+- The `build` script converts the markdown files to html files and generates `css`.
+- The `style.scss` file contains a minimal version of Github's `css` styles.
 - Hey, I'm lazy.
 - Also, fuck html. :)
 
