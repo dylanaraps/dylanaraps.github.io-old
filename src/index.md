@@ -2,7 +2,11 @@
 title: 'Home'
 ---
 
+# Something will go here eventually.
 
-![](https://avatars2.githubusercontent.com/u/6799467?v=3&s=210)
+![](http://i.imgur.com/nBWsYt0.jpg)
+
+> `B L U E   H A W A I I`
+
 
 

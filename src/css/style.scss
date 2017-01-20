@@ -732,8 +732,12 @@ body {
 }
 
 [href*="rice"] img {
-    object-fit: cover;
     height: 200px;
+}
+
+.markdown-body img {
+    object-fit: cover;
+    min-width: 100%;
     width: 100%;
 }
 
