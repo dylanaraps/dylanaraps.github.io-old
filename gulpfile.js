@@ -34,6 +34,7 @@ gulp.task('css', function() {
 
 gulp.task('watch', function() {
 	gulp.watch('src/**/*.md', ['html']).on("change", reload);
+	gulp.watch('src/templates/*.html', ['html']).on("change", reload);
 	gulp.watch('src/scss/**/*.scss', ['css'])
 })
 
