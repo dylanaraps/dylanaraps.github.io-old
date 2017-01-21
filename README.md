@@ -3,30 +3,23 @@
 My personal website.
 
 
-### Notes
+### Setup
 
-- The `html` is generated using `pandoc` and a series of markdown files.
-- The `css`  is generated using `sassc` and `scss`.
-- The `build` script converts the markdown files to html files and generates `css`.
-- The `style.scss` file contains a minimal version of Github's `css` styles.
-- Hey, I'm lazy.
-- Also, fuck `html`. :)
+- Install `nodejs` and `npm`
+- Install `gulp` globally.
 
+```sh
+sudo npm install -g gulp
+```
 
-### Dependencies
+- Install `gulp` and all of the<br \>
+dependencies locally.
 
-**Build script**
+```sh
+sudo npm install --save-dev
 
-- `bash`
-- `pandoc`
-- `sassc`
-
-### Usage
-
-1. Modify `.md` files in `/src`.
-2. Modify `.scss` files in `/src/scss`.
-3. Run the build script to generate `html`/`css`.
-    - `./build`
+```
+- Run `gulp`.
 
 
 ### Thanks
