@@ -10,15 +10,15 @@ var browsersync  = require('browser-sync').create();
 var reload       = browsersync.reload;
 
 gulp.task('html', function() {
-  gulp.src('./src/**/*.md')
-    .pipe(pandoc({
-      from: 'markdown',
-      to: 'html5',
-      ext: '.html',
-      args: ['--smart', '--template=src/templates/post.html']
-    }))
-    .pipe(minifyhtml())
-    .pipe(gulp.dest('./'));
+    gulp.src('./src/**/*.md')
+        .pipe(pandoc({
+            from: 'markdown',
+            to: 'html5',
+            ext: '.html',
+            args: ['--smart', '--template=src/templates/post.html']
+        }))
+        .pipe(minifyhtml())
+        .pipe(gulp.dest('./'));
 });
 
 gulp.task('css', function() {
