@@ -1,3 +1,10 @@
+/* Variables {{{ */
+
+$width: 90%;
+$max-width: 980px;
+
+/* }}} */
+
 /* Github CSS {{{ */
 /* Taken from here: */
 /* https://github.com/sindresorhus/github-markdown-css */
@@ -14,9 +21,9 @@ body {
     font-size: 16px;
     line-height: 1.5;
     margin: 0 auto;
-    max-width: 980px;
+    max-width: $max-width;
     padding-bottom: 50px;
-    width: 95%;
+    width: $width;
     word-wrap: break-word;
 }
 
@@ -693,7 +700,6 @@ body {
 
 /* }}} */
 
-
 /* My CSS {{{ */
 
 
@@ -703,8 +709,8 @@ nav,
 footer {
     min-height: 50px;
     margin: 0 auto;
-    max-width: 980px;
-    width: 95%;
+    max-width: $max-width;
+    width: $width;
 
     ul,
     li {
