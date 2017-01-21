@@ -1,4 +1,4 @@
-# [dylanaraps.com](http://dylanaraps.com)
+# [https://dylanaraps.com/](https://dylanaraps.com/)
 
 My personal website.
 
