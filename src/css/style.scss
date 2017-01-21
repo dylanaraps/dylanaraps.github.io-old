@@ -10,11 +10,12 @@ body {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     color: #333;
+    flex: 1;
     font-size: 16px;
     line-height: 1.5;
     margin: 0 auto;
     max-width: 980px;
-    padding: 2% 0 5%;
+    padding-bottom: 50px;
     width: 95%;
     word-wrap: break-word;
 }
@@ -698,7 +699,8 @@ body {
 
 /* Nav bar {{{ */
 
-.site-nav {
+nav,
+footer {
     min-height: 50px;
     margin: 0 auto;
     max-width: 980px;
@@ -716,11 +718,6 @@ body {
         display: inline-block;
         margin: 20px 20px 20px 0;
 
-        &:first-child {
-            font-family: Georgia,Times,Times New Roman,serif;
-            font-size: 25px;
-            font-weight: 800;
-        }
     }
 
     a {
@@ -733,9 +730,24 @@ body {
     }
 }
 
+/* DA name */
+nav li:first-child {
+    font-family: Georgia,Times,Times New Roman,serif;
+    font-size: 25px;
+    font-weight: 800;
+}
+
 /* }}} */
 
 /* General Styles {{{ */
+
+.site {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  min-height: 100vh;
+  padding: 0;
+}
 
 [href*="rice"] img {
     height: 200px;
