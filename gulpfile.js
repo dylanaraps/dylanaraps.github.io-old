@@ -6,6 +6,8 @@ var concatcss    = require('gulp-concat-css');
 var cleancss     = require('gulp-clean-css');
 var sass         = require('gulp-sass');
 var uncss        = require('gulp-uncss');
+var imagemin     = require('gulp-imagemin');
+var mozjpeg      = require('imagemin-mozjpeg');
 var browsersync  = require('browser-sync').create();
 var reload       = browsersync.reload;
 
@@ -32,10 +34,18 @@ gulp.task('css', function() {
         .pipe(browsersync.stream());
 })
 
+gulp.task('img', function() {
+    gulp.src(['src/images/**/*'])
+        .pipe(imagemin([mozjpeg({progressive: true, quality: 90})]))
+        .pipe(imagemin({progressive: true}))
+        .pipe(gulp.dest('./img'))
+})
+
 gulp.task('watch', function() {
 	gulp.watch('src/**/*.md', ['html']).on("change", reload);
 	gulp.watch('src/templates/*.html', ['html']).on("change", reload);
 	gulp.watch('src/scss/**/*.scss', ['css'])
+	gulp.watch('src/images/**/*', ['img'])
 })
 
 gulp.task('browser-sync', function() {
@@ -49,4 +59,4 @@ gulp.task('browser-sync', function() {
     });
 });
 
-gulp.task('default', ['html', 'css', 'watch', 'browser-sync'])
+gulp.task('default', ['html', 'css', 'img', 'watch', 'browser-sync'])

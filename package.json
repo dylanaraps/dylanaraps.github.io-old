@@ -12,6 +12,8 @@
     "gulp-minify-html": "^1.0.6",
     "gulp-pandoc": "^0.2.2",
     "gulp-sass": "*",
+    "gulp-imagemin": "*",
+    "imagemin-mozjpeg": "*",
     "gulp-uncss": "*"
   },
   "repository": {
