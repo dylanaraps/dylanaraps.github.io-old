@@ -697,7 +697,7 @@ body {
 /* My CSS {{{ */
 
 
-/* Nav bar {{{ */
+/* Nav bar / Footer {{{ */
 
 nav,
 footer {
@@ -728,6 +728,10 @@ footer {
             text-decoration: underline;
         }
     }
+}
+
+footer {
+    padding-bottom: 10px;
 }
 
 /* DA name */
