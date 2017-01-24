@@ -761,6 +761,8 @@ nav li:first-child {
 
 [href*="rice"] img {
     height: 200px;
+    min-width: 100%;
+    object-fit: cover;
 }
 
 figure {
