@@ -8,6 +8,7 @@ var sass         = require('gulp-sass');
 var uncss        = require('gulp-uncss');
 var imagemin     = require('gulp-imagemin');
 var mozjpeg      = require('imagemin-mozjpeg');
+var pngquant     = require('imagemin-pngquant');
 var browsersync  = require('browser-sync').create();
 var reload       = browsersync.reload;
 
@@ -35,7 +36,11 @@ gulp.task('css', function() {
 })
 
 gulp.task('img', function() {
-    gulp.src(['src/images/**/*'])
+    gulp.src(['src/images/**/*.png'])
+        .pipe(imagemin([pngquant({quality: 0-72})]))
+        .pipe(gulp.dest('./img'))
+
+    gulp.src(['src/images/**/*.jpg'])
         .pipe(imagemin([mozjpeg({progressive: true, quality: 90})]))
         .pipe(imagemin({progressive: true}))
         .pipe(gulp.dest('./img'))

@@ -9,12 +9,13 @@
     "gulp-autoprefixer": "*",
     "gulp-clean-css": "*",
     "gulp-concat-css": "*",
+    "gulp-imagemin": "*",
     "gulp-minify-html": "^1.0.6",
     "gulp-pandoc": "^0.2.2",
     "gulp-sass": "*",
-    "gulp-imagemin": "*",
+    "gulp-uncss": "*",
     "imagemin-mozjpeg": "*",
-    "gulp-uncss": "*"
+    "imagemin-pngquant": "^5.0.0"
   },
   "repository": {
     "type": "git",
