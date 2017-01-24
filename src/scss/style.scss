@@ -1,7 +1,7 @@
 /* Variables {{{ */
 
 $width: 90%;
-$max-width: 980px;
+$max-width: 700px;
 
 /* }}} */
 
@@ -761,12 +761,6 @@ nav li:first-child {
 
 [href*="rice"] img {
     height: 200px;
-}
-
-.markdown-body img {
-    object-fit: cover;
-    min-width: 100%;
-    width: 100%;
 }
 
 figure {
