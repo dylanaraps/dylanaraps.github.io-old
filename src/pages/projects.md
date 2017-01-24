@@ -16,5 +16,5 @@ title: 'Projects'
 
 > Generate and change colorschemes on the fly.
 
-[https://github.com/dylanaraps/neofetch](https://github.com/dylanaraps/wal)
+[https://github.com/dylanaraps/wal](https://github.com/dylanaraps/wal)
 
