@@ -1,6 +1,5 @@
 var gulp         = require('gulp');
 var pandoc       = require('gulp-pandoc');
-var minifyhtml   = require('gulp-minify-html');
 var autoprefixer = require('gulp-autoprefixer');
 var concatcss    = require('gulp-concat-css');
 var cleancss     = require('gulp-clean-css');
@@ -20,7 +19,6 @@ gulp.task('html', function() {
             ext: '.html',
             args: ['--smart', '--template=src/templates/post.html']
         }))
-        .pipe(minifyhtml())
         .pipe(gulp.dest('./'));
 });
 
