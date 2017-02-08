@@ -79,11 +79,9 @@ title: 'Tupac Craft'
 
 ### Server Files
 
-[Github Repo](https://github.com/TupaCraft)
-
-- [Server log files](https://github.com/TupacCraft/Logs)
-- [Server config files](https://github.com/TupacCraft/Configs)
-- [Server world files](https://github.com/TupacCraft/Worlds)
+- [Server logs](https://github.com/TupacCraft/Logs)
+- [Server configs](https://github.com/TupacCraft/Configs)
+- [Server worlds](https://drive.google.com/drive/folders/0B8OBUJUljDMkbDRIbjQweHlLNWs?usp=sharing)
 
 
 ### Server Costs
@@ -100,5 +98,7 @@ The current server costs are **$22.50** a month.
 
 - No one has OP privileges on the server.
 - The server is for Minecraft 1.11.2.
+- World backups are done using `rclone` to Google Drive.
+- All other backups are done using `git` to GitHub.
 - This page is subject to change at any time.
 - Transparency is my goal with running this server.
