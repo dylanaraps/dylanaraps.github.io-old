@@ -15,8 +15,10 @@ title: 'Tupac Craft'
 * [Privileges](#privileges)
 * [Plugins](#plugins)
 * [Commands](#commands)
-* [Additional crap](#additional-crap)
 * [Transparency](#transparency)
+    * [Server Files](#server-files)
+    * [Server Costs](#server-costs)
+* [Additional crap](#additional-crap)
 
 <!-- vim-markdown-toc -->
 
@@ -73,19 +75,30 @@ title: 'Tupac Craft'
     - Give players access to your private chests and etc.
 
 
-## Additional crap
-
-- No one has OP privileges on the server.
-- The current server costs are **$20** a month.
-- The server is for Minecraft 1.11.2.
-- This page is subject to change at any time.
-- Transparency is my goal with running this server.
-
-
 ## Transparency
+
+### Server Files
 
 [Github Repo](https://github.com/TupaCraft)
 
 - [Server log files](https://github.com/TupacCraft/Logs)
 - [Server config files](https://github.com/TupacCraft/Configs)
 - [Server world files](https://github.com/TupacCraft/Worlds)
+
+
+### Server Costs
+
+The current server costs are **$22.50** a month.
+
+| Service | Cost (per month) |
+| ---- | ---------------- |
+| Server Hosting (vultr) | $20 |
+| World backups (Google Drive) | $2.50 |
+
+
+## Additional crap
+
+- No one has OP privileges on the server.
+- The server is for Minecraft 1.11.2.
+- This page is subject to change at any time.
+- Transparency is my goal with running this server.
