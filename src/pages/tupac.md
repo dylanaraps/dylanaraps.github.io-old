@@ -16,6 +16,7 @@ title: 'Tupac'
 * [Plugins](#plugins)
 * [Commands](#commands)
 * [Additional crap](#additional-crap)
+* [Transparency](#transparency)
 
 <!-- vim-markdown-toc -->
 
@@ -78,4 +79,13 @@ title: 'Tupac'
 - The current server costs are **$20** a month.
 - The server is for Minecraft 1.11.2.
 - This page is subject to change at any time.
-- Transparency is my goal, server logs will be made available soon.
+- Transparency is my goal with running this server.
+
+
+## Transparency
+
+[Github Repo](https://github.com/TupaCraft)
+
+- [Server log files](https://github.com/TupacCraft/Logs)
+- [Server config files](https://github.com/TupacCraft/Configs)
+- [Server world files](https://github.com/TupacCraft/Worlds)
