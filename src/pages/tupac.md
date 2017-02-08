@@ -1,8 +1,8 @@
 ---
-title: 'Tupac'
+title: 'Tupac Craft'
 ---
 
-# TupacCraft
+# Tupac Craft
 
 ![Biggie Smalls](/img/biggie.jpg)
 
