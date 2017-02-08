@@ -92,6 +92,7 @@ The current server costs are **$22.50** a month.
 | ---- | ---------------- |
 | Server Hosting (vultr) | $20 |
 | World backups (Google Drive) | $2.50 |
+| **Total** | **$22.50** |
 
 
 ## Additional crap
