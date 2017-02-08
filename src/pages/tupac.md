@@ -9,6 +9,7 @@ title: 'Tupac'
 ## Table Of Contents
 
 <!-- vim-markdown-toc GFM -->
+* [Community](#community)
 * [Rules](#rules)
 * [Bans](#bans)
 * [Privileges](#privileges)
@@ -18,10 +19,17 @@ title: 'Tupac'
 
 <!-- vim-markdown-toc -->
 
+## Community
+
+- Server IP: [45.63.31.117](http://45.63.31.117)
+- Discord: [https://discord.gg/e53GXC6](https://discord.gg/e53GXC6)
+
+
 ## Rules
 
 1. Common Sense.
 2. Don't be a cunt.
+
 
 ## Bans
 
@@ -44,6 +52,7 @@ title: 'Tupac'
     - Add signs to chests, furnaces, doors and etc to 'private' it to yourself.
     - No one will be able to use, open or break private blocks.
 
+
 ## Commands
 
 - `/co inspect`
@@ -62,7 +71,11 @@ title: 'Tupac'
 - `/lock`
     - Give players access to your private chests and etc.
 
+
 ## Additional crap
 
 - No one has OP privileges on the server.
 - The current server costs are **$20** a month.
+- The server is for Minecraft 1.11.2.
+- This page is subject to change at any time.
+- Transparency is my goal, server logs will be made available soon.
