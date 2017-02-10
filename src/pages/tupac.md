@@ -16,7 +16,6 @@ title: 'Tupac Craft'
 * [Plugins](#plugins)
 * [Commands](#commands)
 * [Transparency](#transparency)
-    * [Server Files](#server-files)
     * [Server Costs](#server-costs)
 * [Additional crap](#additional-crap)
 
@@ -77,11 +76,9 @@ title: 'Tupac Craft'
 
 ## Transparency
 
-### Server Files
+All of the files were originally available on GitHub but we can't have nice things can we? Fuck you (You know who you are)
 
-- [Server logs](https://github.com/TupacCraft/Logs)
-- [Server configs](https://github.com/TupacCraft/Configs)
-- Server worlds - Coming soon.
+Those playing on the server can message me for access to Server Logs, Configs, Scripts and etc. If I shut the server down in the future, everything will be made public.
 
 
 ### Server Costs
