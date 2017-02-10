@@ -16,6 +16,7 @@ title: 'Tupac Craft'
 * [Plugins](#plugins)
 * [Commands](#commands)
 * [Transparency](#transparency)
+    * [Server Files](#server-files)
     * [Server Costs](#server-costs)
 * [Additional crap](#additional-crap)
 
@@ -75,6 +76,8 @@ title: 'Tupac Craft'
 
 
 ## Transparency
+
+### Server Files
 
 All of the files were originally available on GitHub but we can't have nice things can we? Fuck you (You know who you are)
 
