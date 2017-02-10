@@ -81,7 +81,7 @@ title: 'Tupac Craft'
 
 - [Server logs](https://github.com/TupacCraft/Logs)
 - [Server configs](https://github.com/TupacCraft/Configs)
-- [Server worlds](https://drive.google.com/drive/folders/0B8OBUJUljDMkbDRIbjQweHlLNWs?usp=sharing)
+- Server worlds - Coming soon.
 
 
 ### Server Costs
