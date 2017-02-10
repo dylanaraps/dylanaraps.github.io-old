@@ -116,26 +116,30 @@
             <li><a href="https://drive.google.com/drive/folders/0B8OBUJUljDMkbDRIbjQweHlLNWs?usp=sharing">Server worlds</a></li>
             </ul>
             <h3 id="server-costs">Server Costs</h3>
-            <p>The current server costs are <strong>$22.50</strong> a month.</p>
+            <p>The current server costs are <strong>$25</strong> a month.</p>
             <table>
             <thead>
             <tr class="header">
             <th>Service</th>
+            <th>Purpose</th>
             <th>Cost (per month)</th>
             </tr>
             </thead>
             <tbody>
             <tr class="odd">
-            <td>Server Hosting (vultr)</td>
+            <td>FreeBSD Server</td>
+            <td>Minecraft Server</td>
             <td>$20</td>
             </tr>
             <tr class="even">
-            <td>World backups (Google Drive)</td>
-            <td>$2.50</td>
+            <td>Debian Server</td>
+            <td>Server Backups</td>
+            <td>$5</td>
             </tr>
             <tr class="odd">
             <td><strong>Total</strong></td>
-            <td><strong>$22.50</strong></td>
+            <td></td>
+            <td><strong>$25</strong></td>
             </tr>
             </tbody>
             </table>
@@ -143,7 +147,7 @@
             <ul>
             <li>No one has OP privileges on the server.</li>
             <li>The server is for Minecraft 1.11.2.</li>
-            <li>World backups are done using <code>rclone</code> to Google Drive.</li>
+            <li>World backups are done using <code>rsync</code> to a second VPS.</li>
             <li>All other backups are done using <code>git</code> to GitHub.</li>
             <li>This page is subject to change at any time.</li>
             <li>Transparency is my goal with running this server.</li>

@@ -86,20 +86,20 @@ title: 'Tupac Craft'
 
 ### Server Costs
 
-The current server costs are **$22.50** a month.
+The current server costs are **$25** a month.
 
-| Service | Cost (per month) |
-| ---- | ---------------- |
-| Server Hosting (vultr) | $20 |
-| World backups (Google Drive) | $2.50 |
-| **Total** | **$22.50** |
+| Service | Purpose | Cost (per month) |
+| ------- | ------- | ---------------- |
+| FreeBSD Server | Minecraft Server | $20 |
+| Debian Server |  Server Backups | $5 |
+| **Total** | | **$25** |
 
 
 ## Additional crap
 
 - No one has OP privileges on the server.
 - The server is for Minecraft 1.11.2.
-- World backups are done using `rclone` to Google Drive.
+- World backups are done using `rsync` to a second VPS.
 - All other backups are done using `git` to GitHub.
 - This page is subject to change at any time.
 - Transparency is my goal with running this server.
