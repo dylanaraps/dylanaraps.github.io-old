@@ -99,7 +99,6 @@ The current server costs are **$25** a month.
 
 - No one has OP privileges on the server.
 - The server is for Minecraft 1.11.2.
-- World backups are done using `rsync` to a second VPS.
-- All other backups are done using `git` to GitHub.
+- Server backups are done using `rsync` to a second VPS.
 - This page is subject to change at any time.
 - Transparency is my goal with running this server.
