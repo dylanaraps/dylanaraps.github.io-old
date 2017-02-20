@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/dyl
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://dylanaraps.com
+  * I am dyl (https://keybase.io/dyl) on keybase.
+  * I have a public key with fingerprint 0A54 7BFE 28E9 9F5E ABDD  F71C 03E5 3A5A 421C 0A0D
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101852bcc103613b4cd6759c4fd75c0c4e3712ce386fa831bc44352ddd89d8be2ed0a",
+            "fingerprint": "0a547bfe28e99f5eabddf71c03e53a5a421c0a0d",
+            "host": "keybase.io",
+            "key_id": "03e53a5a421c0a0d",
+            "kid": "0101852bcc103613b4cd6759c4fd75c0c4e3712ce386fa831bc44352ddd89d8be2ed0a",
+            "uid": "1282cda5409ac5a4db55717d49e08319",
+            "username": "dyl"
+        },
+        "service": {
+            "hostname": "dylanaraps.com",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1487632553,
+    "expire_in": 157680000,
+    "prev": "8f13a8730561a6f886d7dccceb3dbb953793ea00379b9477f3746d807de3c9b2",
+    "seqno": 17,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.62
+Comment: https://keybase.io/crypto
+
+yMImAnicrVJbSBVBGD5Hu9gpI5CuGNRaCCWn3Z3dnd3TQ6ASVIKCESHZcXZmVhd1
+93R2tUROd1KK6qGii2FKmagVdCGJootp0MWnBJFKiSiLSgkVtewy24Ueem1e/pn/
+/77v//7hb0+M9wX88a9DeenJgUT/43vHynwbW7Y1VXK6TSq4UCVXTH8GWkKo44aL
+TcKFOF7gBVUWdYwFHigC0CVMFChrWDIIlDGPJQqgIGIKVMVAKhB0LElAFgkhqkZU
+nYqU8IhL4wzTKqTRSNS0XE8WyRLUDSqqVNMMmSKdEAMKmAdUBkhGksjuiCeMWGQ7
+HoOZ05FDg6bNcuwR/mXvX/x/9l32U04QVRETZprXEGbtiC7LUIBE0ijPyJoHdGjU
+QqWUoUlFCRdL41ii3MTU+1NviL9FZKEoijhBbJcyYiRquza2S1ityHUjTsjjuhUR
+D7yV6uHfMmHdtAj7RMYop1HHtC0uJDAkdk1PV5BUqABRlkEaR7dFzCgNmx5ChorK
+s+P1oeVMUjUEgFQIeFkRkGKoqkIgwRhTHRBd12QANUARz7OoaxKEBoCSQlQeEgqw
+poucN9gWy2bakPlEhUzTMQst5JZFKRdru7tpks8f8E2ZHOdtly8wbdafnUtKS/Dt
+mY/qDg5d7apv7k3omzoudOWO5/vnfccHUp4l9VQVZC5/9THY0dLV0bRL6Plw9Mmm
+d+2D46fqxjYMx43sSKJcz8CVIw3+6ps3vlybeDej+s23hv318tuPOcHuJeOfvs5Z
+UztzbXHn83PNJ4P85ZSB7Lm7reHQ8dj1S+ajuN6d7RcvbZ/Imv1ia96FBys/J2eM
+9PedLro9dDO3qlF4mRm8lVKj7LXXtzqHQ9XLVoe+lT6tSV3gLq1sXOFkba5PnRij
+k50rK8+NovKGE1WJbWNSwejZdvPMjeL82mXhRemr9q2bPvK+/04TDzq/ZA/lZCze
+MLjwUKy1aix2/3z3YG9l4GFJfs8Pw2lJiA==
+=kct6
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/dyl
+
+==================================================================
