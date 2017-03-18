@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>https://dylanaraps.com/</loc>
+  <lastmod>2017-02-20T23:17:42+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://dylanaraps.com/pages/blog</loc>
+  <lastmod>2017-02-20T23:17:42+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://dylanaraps.com/pages/projects</loc>
+  <lastmod>2017-02-20T23:17:42+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://dylanaraps.com/pages/rice</loc>
+  <lastmod>2017-02-20T23:17:42+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://dylanaraps.com/pages/contact</loc>
+  <lastmod>2017-02-20T23:17:42+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://dylanaraps.com/crayon/</loc>
+  <lastmod>2017-01-18T22:14:10+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://dylanaraps.com/pages/rice/2017-01</loc>
+  <lastmod>2017-02-20T23:17:42+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://dylanaraps.com/pages/rice/2016-12</loc>
+  <lastmod>2017-02-20T23:17:42+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+</urlset>
