@@ -722,7 +722,7 @@ footer {
 
     li {
         display: inline-block;
-        margin: 20px 20px 20px 0;
+        margin: 30px 20px 40px 0;
 
     }
 
@@ -775,14 +775,23 @@ figure {
 
 /* Media Queries {{{ */
 
-
-@media screen and (max-width: 500px) {
-    .site-nav li {
-        margin: 20px 10px 0 0;
+@media screen and (max-width: 350px) {
+    nav li:first-child {
+        width: 100%;
     }
 
+    footer li {
+        margin: 20px 10px 0 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
     nav {
         padding-bottom: 25px;
+
+        li {
+            margin: 20px 10px 0 0;
+        }
     }
 }
 

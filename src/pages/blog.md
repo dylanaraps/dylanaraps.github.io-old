@@ -4,5 +4,4 @@ title: 'Blog'
 
 # Blog
 
-Coming soon.
-
+Will I ever find anything to write about?..

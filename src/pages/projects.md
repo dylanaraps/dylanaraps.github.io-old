@@ -18,19 +18,3 @@ title: 'Projects'
 
 [https://github.com/dylanaraps/wal](https://github.com/dylanaraps/wal)
 
-
-# Color Schemes
-
-
-### Crayon
-
-> A dark 16 color colorscheme for Vim, Gvim, and Nvim.
-
-[https://dylanaraps.com/crayon/](https://dylanaraps.com/crayon/)
-
-
-### Ryuuko
-
-> A colorscheme~
-
-[https://github.com/dylanaraps/ryuuko](https://github.com/dylanaraps/ryuuko)
