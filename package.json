@@ -14,6 +14,7 @@
     "gulp-pandoc": "^0.2.2",
     "gulp-sass": "*",
     "gulp-uncss": "*",
+    "gulp-jsbeautifier": "*",
     "imagemin-mozjpeg": "*",
     "imagemin-pngquant": "^5.0.0"
   },

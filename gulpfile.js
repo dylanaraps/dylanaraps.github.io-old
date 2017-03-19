@@ -1,5 +1,6 @@
 var gulp         = require('gulp');
 var pandoc       = require('gulp-pandoc');
+var prettify     = require('gulp-jsbeautifier');
 var autoprefixer = require('gulp-autoprefixer');
 var concatcss    = require('gulp-concat-css');
 var cleancss     = require('gulp-clean-css');
@@ -18,6 +19,12 @@ gulp.task('html', function() {
             to: 'html5',
             ext: '.html',
             args: ['--smart', '--template=src/templates/post.html']
+        }))
+        .pipe(prettify({
+            "preserve_newlines": true,
+            "end_with_newline": false,
+            "indent_inner_html": "true",
+            "extra_liners": ""
         }))
         .pipe(gulp.dest('./'));
 });
