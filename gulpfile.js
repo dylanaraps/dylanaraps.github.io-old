@@ -18,10 +18,9 @@ gulp.task('html', function() {
             from: 'markdown',
             to: 'html5',
             ext: '.html',
-            args: ['--smart', '--template=src/templates/post.html']
+            args: ['--smart', '--template=src/templates/post.html', '-fmarkdown-implicit_figures']
         }))
         .pipe(prettify({
-            "preserve_newlines": true,
             "end_with_newline": false,
             "indent_inner_html": "true",
             "extra_liners": ""
