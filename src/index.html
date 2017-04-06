@@ -13,20 +13,12 @@
     </head>
 
     <body>
-        <nav>
-    <ul>
-        <li><a href="https://dylanaraps.com">DA</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Rice</a></li>
-    </ul>
-</nav>
-
-        <header style="background-image: url('/img/daddy.PNG'); background-position: ">
-    <h1></h1>
-</header>
-
-
-
+        @@include('./includes/nav.html')
+        @@include('./includes/header.html', {
+            "title": "",
+            "background": "/img/daddy.PNG",
+            "position": ""
+        })
 
         <main>
             <h1>Blog</h1>
@@ -47,14 +39,6 @@
             </article>
         </main>
 
-        <footer>
-    <ul>
-        <li><a href="https://github.com/dylanaraps">GitHub</a></li>
-        <li><a href="https://plus.google.com/u/0/+DylanAraps">Google+</a></li>
-        <li><a href="https://reddit.com/u/dylan112">Reddit</a></li>
-        <li><a href="https://twitter.com/dylanaraps">Twitter</a></li>
-    </ul>
-</footer>
-
+        @@include('./includes/footer.html')
     </body>
 </html>

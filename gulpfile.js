@@ -1,6 +1,5 @@
 var gulp         = require('gulp');
-var pandoc       = require('gulp-pandoc');
-var prettify     = require('gulp-jsbeautifier');
+var fileinclude  = require('gulp-file-include');
 var autoprefixer = require('gulp-autoprefixer');
 var concatcss    = require('gulp-concat-css');
 var cleancss     = require('gulp-clean-css');
@@ -13,17 +12,10 @@ var browsersync  = require('browser-sync').create();
 var reload       = browsersync.reload;
 
 gulp.task('html', function() {
-    gulp.src('./src/**/*.md')
-        .pipe(pandoc({
-            from: 'markdown',
-            to: 'html5',
-            ext: '.html',
-            args: ['--smart', '--template=src/templates/post.html', '-fmarkdown-implicit_figures']
-        }))
-        .pipe(prettify({
-            "end_with_newline": false,
-            "indent_inner_html": "true",
-            "extra_liners": ""
+    gulp.src(['./src/**/*.html', '!./src/includes/*.html'])
+        .pipe(fileinclude({
+           prefix: '@@',
+           basepath: '@file'
         }))
         .pipe(gulp.dest('./'));
 });
@@ -37,25 +29,25 @@ gulp.task('css', function() {
         .pipe(cleancss({keepSpecialComments: 0}))
         .pipe(gulp.dest('./css'))
         .pipe(browsersync.stream());
-})
+});
 
 gulp.task('img', function() {
-    gulp.src(['src/images/**/*.png'])
+    gulp.src(['src/images/**/*.png', 'src/images/**/*.PNG'])
         .pipe(imagemin([pngquant({quality: 0-72})]))
-        .pipe(gulp.dest('./img'))
+        .pipe(gulp.dest('./img'));
 
     gulp.src(['src/images/**/*.jpg'])
         .pipe(imagemin([mozjpeg({progressive: true, quality: 90})]))
         .pipe(imagemin({progressive: true}))
-        .pipe(gulp.dest('./img'))
-})
+        .pipe(gulp.dest('./img'));
+});
 
 gulp.task('watch', function() {
-	gulp.watch('src/**/*.md', ['html']).on("change", reload);
+	gulp.watch('src/**/*.html', ['html']).on("change", reload);
 	gulp.watch('src/templates/*.html', ['html']).on("change", reload);
-	gulp.watch('src/scss/**/*.scss', ['css'])
-	gulp.watch('src/images/**/*', ['img'])
-})
+	gulp.watch('src/scss/**/*.scss', ['css']);
+	gulp.watch('src/images/**/*', ['img']);
+});
 
 gulp.task('browser-sync', function() {
     browsersync.init({
@@ -68,4 +60,4 @@ gulp.task('browser-sync', function() {
     });
 });
 
-gulp.task('default', ['html', 'css', 'img', 'watch', 'browser-sync'])
+gulp.task('default', ['html', 'css', 'img', 'watch', 'browser-sync']);
