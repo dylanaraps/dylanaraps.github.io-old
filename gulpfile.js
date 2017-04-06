@@ -15,7 +15,8 @@ gulp.task('html', function() {
     gulp.src(['./src/**/*.html', '!./src/includes/*.html'])
         .pipe(fileinclude({
            prefix: '@@',
-           basepath: '@file'
+           basepath: '@file',
+           indent: true
         }))
         .pipe(gulp.dest('./'));
 });
