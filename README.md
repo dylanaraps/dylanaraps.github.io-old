@@ -1,6 +1,6 @@
 # [https://dylanaraps.com/](https://dylanaraps.com/)
 
-My personal website.
+My personal website, currently under construction.
 
 
 ### Setup
@@ -21,7 +21,3 @@ sudo npm install --save-dev
 ```
 - Run `gulp`.
 
-
-### Thanks
-
-- https://github.com/sindresorhus/github-markdown-css

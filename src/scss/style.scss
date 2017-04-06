@@ -7,6 +7,8 @@
 $body-margin: 700px;
 $body-width: 90%;
 
+$link-color: #344a91;
+
 $nav-height: 100px;
 $nav-link-color: #222;
 
@@ -15,7 +17,8 @@ $header-text-color: #fff;
 
 $main-title-border-color: #eee;
 
-$article-link-color: #243277;
+$article-link-color: #222;
+$article-date-color: #555;
 
 $footer-border-color: #eee;
 $footer-height: 75px;
@@ -34,6 +37,39 @@ $footer-height: 75px;
 body,
 html {
   height: 100%;
+}
+
+// }}}
+
+// FONTS {{{
+
+h1,
+h2,
+h2 a,
+nav li:first-child a {
+  font-family: Georgia,Times,Times New Roman,serif;
+}
+
+h3,
+h4,
+h5,
+p,
+a {
+  font-family: Verdana,Geneva,sans-serif;
+}
+
+// }}}
+
+// TEXT {{{
+
+a {
+  color: $link-color;
+  text-decoration: none;
+  transition: .2s;
+
+  &:hover {
+    border-bottom: 2px solid $nav-link-color;
+  }
 }
 
 // }}}
@@ -65,12 +101,6 @@ nav {
 
   a {
     color: $nav-link-color;
-    text-decoration: none;
-    transition: .2s;
-
-    &:hover {
-      border-bottom: 2px solid $nav-link-color;
-    }
   }
 }
 
@@ -109,7 +139,6 @@ main {
   }
 }
 
-
 // }}}
 
 // BLOG {{{
@@ -123,7 +152,10 @@ article {
 
   a {
     color: $article-link-color;
-    text-decoration: none;
+  }
+
+  .date {
+    color: $article-date-color;
   }
 }
 
@@ -149,11 +181,6 @@ footer {
     display: inline-block;
     margin-right: 20px;
   }
-
-  a {
-    text-decoration: none;
-  }
 }
-
 
 // }}}
