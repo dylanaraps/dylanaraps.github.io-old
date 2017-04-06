@@ -7,7 +7,7 @@
         })
     </head>
 
-    <body>
+    <body class="site">
         @@include('./includes/nav.html')
         @@include('./includes/header.html', {
             "title": "",
@@ -15,25 +15,13 @@
             "position": ""
         })
 
-        <main>
+        <main class="site-content">
             <h1>Blog</h1>
 
             @@include('./includes/article.html', {
-                "title": "Blog post 1",
-                "date": "03/05/2017",
-                "url": "#"
-            })
-
-            @@include('./includes/article.html', {
-                "title": "Blog post 2",
-                "date": "03/05/2017",
-                "url": "#"
-            })
-
-            @@include('./includes/article.html', {
-                "title": "Blog post 3",
-                "date": "03/05/2017",
-                "url": "#"
+                "title": "Website CSS Test",
+                "date": "06/04/2017",
+                "url": "./pages/blog/css.html"
             })
         </main>
 

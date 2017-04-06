@@ -7,8 +7,10 @@
 $body-margin: 700px;
 $body-width: 90%;
 $body-text-color: #222;
+$magic-margin: 1.63em;
 
 $link-color: #344a91;
+$link-color2: #34917b;
 
 $nav-height: 100px;
 $nav-link-color: #222;
@@ -30,23 +32,28 @@ $footer-height: 75px;
 // MIXINS {{{
 
 @mixin ghost-button($width, $color, $color2) {
-  border: 2px solid $link-color;
-  color: $link-color;
+  border: 2px solid $color;
+  color: $color;
   display: inline-block;
-  margin-right: 5px;
-  padding: 10px;
+  margin-right: 1%;
+  opacity:: .7;
+  padding: 8px;
   text-align: center;
   transition: .2s;
   width: $width;
 
   &:hover {
-    background-color: $color / 2;
+    background-color: $color;
     color: $color2;
   }
 }
 
-.button {
-  @include ghost-button(150px, #222, #fff);
+.button-green {
+  @include ghost-button(120px, $link-color2, #fff);
+}
+
+.button-blue {
+  @include ghost-button(120px, $link-color, #fff);
 }
 
 
@@ -63,6 +70,17 @@ $footer-height: 75px;
 body,
 html {
   height: 100%;
+}
+
+// }}}
+
+// BODY {{{
+
+body {
+  overflow-y: scroll;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 // }}}
@@ -100,8 +118,28 @@ a {
 
 p {
   color: $body-text-color;
-  line-height: 1.5;
-  margin: 10px 0;
+  font-size: 1.1em;
+  line-height: $magic-margin;
+  margin-bottom: $magic-margin;
+}
+
+.date {
+  color: $article-date-color;
+  font-size: 12px;
+  font-weight: normal;
+  margin: 0 0 0 5px;
+}
+
+// }}}
+
+// IMAGES {{{
+
+.responsive {
+  display: block;
+  height: 500px;
+  margin-bottom: $magic-margin;
+  object-fit: cover;
+  width: 100%;
 }
 
 // }}}
@@ -145,6 +183,7 @@ header {
   background-size: cover;
   height: $header-height;
   line-height: $header-height;
+  min-height: $header-height;
   text-align: center;
   width: 100%;
 
@@ -160,6 +199,7 @@ header {
 
 main {
   display: block;
+  flex: 1;
   margin: 30px auto 0;
   max-width: $body-margin;
   width: $body-width;
@@ -178,12 +218,8 @@ main {
 article {
   margin: 25px 0;
 
-  h2 {
-    margin-bottom: 10px;
-  }
-
   .date {
-    color: $article-date-color;
+    margin-bottom: 10px;
   }
 
   .blog-title {
