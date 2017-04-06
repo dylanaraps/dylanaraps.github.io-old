@@ -18,20 +18,23 @@
         <main>
             <h1>Blog</h1>
 
-            <article>
-                <h2><a href="#">Blog title goes here</a></h2>
-                <span class="date">21/02/2017</span>
-            </article>
+            @@include('./includes/article.html', {
+                "title": "Blog post 1",
+                "date": "03/05/2017",
+                "url": "#"
+            })
 
-            <article>
-                <h2><a href="#">Blog title goes here</a></h2>
-                <span class="date">21/02/2017</span>
-            </article>
+            @@include('./includes/article.html', {
+                "title": "Blog post 2",
+                "date": "03/05/2017",
+                "url": "#"
+            })
 
-            <article>
-                <h2><a href="#">Blog title goes here</a></h2>
-                <span class="date">21/02/2017</span>
-            </article>
+            @@include('./includes/article.html', {
+                "title": "Blog post 3",
+                "date": "03/05/2017",
+                "url": "#"
+            })
         </main>
 
         @@include('./includes/footer.html')

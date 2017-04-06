@@ -6,6 +6,7 @@
 
 $body-margin: 700px;
 $body-width: 90%;
+$body-text-color: #222;
 
 $link-color: #344a91;
 
@@ -23,6 +24,31 @@ $article-date-color: #555;
 $footer-border-color: #eee;
 $footer-height: 75px;
 $footer-height: 75px;
+
+// }}}
+
+// MIXINS {{{
+
+@mixin ghost-button($width, $color, $color2) {
+  border: 2px solid $link-color;
+  color: $link-color;
+  display: inline-block;
+  margin-right: 5px;
+  padding: 10px;
+  text-align: center;
+  transition: .2s;
+  width: $width;
+
+  &:hover {
+    background-color: $color / 2;
+    color: $color2;
+  }
+}
+
+.button {
+  @include ghost-button(150px, #222, #fff);
+}
+
 
 // }}}
 
@@ -70,6 +96,12 @@ a {
   &:hover {
     border-bottom: 2px solid $nav-link-color;
   }
+}
+
+p {
+  color: $body-text-color;
+  line-height: 1.5;
+  margin: 10px 0;
 }
 
 // }}}
@@ -150,12 +182,12 @@ article {
     margin-bottom: 10px;
   }
 
-  a {
-    color: $article-link-color;
-  }
-
   .date {
     color: $article-date-color;
+  }
+
+  .blog-title {
+    color: $article-link-color;
   }
 }
 

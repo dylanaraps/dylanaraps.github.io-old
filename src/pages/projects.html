@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        @@include('../includes/head.html', {
+            "title": "Dylan Araps - Projects",
+            "description": "Open source software and other projects created by Dylan Araps."
+        })
+    </head>
+
+    <body>
+        @@include('../includes/nav.html')
+        @@include('../includes/header.html', {
+            "title": "",
+            "background": "../../img/daddy.PNG",
+            "position": ""
+        })
+
+        <main>
+            <h1>Projects</h1>
+
+            <article>
+                <h2>🖼️ Neofetch</h2>
+                <p>A fast, highly customizable system info script that supports Linux, MacOS, iOS, BSD, Solaris, Android, Haiku, GNU Hurd, MINIX, AIX and Windows (Cygwin/MSYS2/MinGW/Windows 10 Linux subsystem).</p>
+
+                <a class="button" href="https://github.com/dylanaraps/neofetch/wiki/Installation">Download</a>
+                <a class="button" href="https://github.com/dylanaraps/neofetch">Github Repo</a>
+            </article>
+
+            <article>
+                <h2>🎨 wal</h2>
+                <p>Generate and change colorschemes on the fly.</p>
+
+                <a class="button" href="https://github.com/dylanaraps/wal/archive/master.zip">Download</a>
+                <a class="button" href="https://github.com/dylanaraps/wal">Github Repo</a>
+            </article>
+        </main>
+
+        @@include('../includes/footer.html')
+    </body>
+</html>
