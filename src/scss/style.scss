@@ -42,6 +42,7 @@ $footer-height: 100px;
   width: $width;
 
   &:hover {
+    border: 2px solid $color;
     background-color: $color;
     color: $color2;
   }
