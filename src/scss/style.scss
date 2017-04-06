@@ -24,7 +24,7 @@ $article-link-color: #222;
 $article-date-color: #555;
 
 $footer-border-color: #eee;
-$footer-height: 75px;
+$footer-height: 100px;
 
 // }}}
 
@@ -252,11 +252,11 @@ article {
 footer {
   border-top: 1px solid $footer-border-color;
   display: block;
-  height: $footer-height;
-  line-height: $magic-margin * 2.5;
+  min-height: $footer-height;
+  line-height: $footer-height;
   margin: 0 auto;
   max-width: $body-margin;
-  padding-top: .3em;
+  padding: .3em;
   width: $body-width;
 
   ul {
