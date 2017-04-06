@@ -116,6 +116,13 @@ a {
 }
 
 main {
+  h1 {
+    border-bottom: 1px solid $main-title-border-color;
+    font-size: 3em;
+    margin-bottom: 30px;
+    padding-bottom: .3em;
+  }
+
   p {
     color: $body-text-color;
     font-size: 1.1em;
@@ -220,12 +227,6 @@ main {
   margin: 30px auto 0;
   max-width: $body-margin;
   width: $body-width;
-
-  h1 {
-    border-bottom: 1px solid $main-title-border-color;
-    margin-bottom: 30px;
-    padding-bottom: .3em;
-  }
 }
 
 // }}}
@@ -265,6 +266,26 @@ footer {
   li {
     display: inline-block;
     margin-right: 20px;
+  }
+}
+
+// }}}
+
+// MEDIA QUERIES {{{
+
+@media only screen and (max-width:700px){
+  main {
+    h1 {
+      font-size: 2em;
+    }
+  }
+}
+
+@media only screen and (max-width:400px){
+  main {
+    p {
+      font-size: 1em;
+    }
   }
 }
 
