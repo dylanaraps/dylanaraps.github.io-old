@@ -115,27 +115,29 @@ a {
   }
 }
 
-p {
-  color: $body-text-color;
-  font-size: 1.1em;
-  line-height: $magic-margin;
-  margin: $magic-margin 0;
-}
+main {
+  p {
+    color: $body-text-color;
+    font-size: 1.1em;
+    line-height: $magic-margin;
+    margin: $magic-margin 0;
+  }
 
-blockquote {
-  @extend p;
+  blockquote {
+    @extend p;
 
-  border-left: 5px solid #ccc;
-  color: #555;
-  padding-left: 15px;
-}
+    border-left: 5px solid #ccc;
+    color: #555;
+    padding-left: 15px;
+  }
 
-ul,
-ol {
-  @extend p;
+  ul,
+  ol {
+    @extend p;
 
-  margin: 0;
-  padding-left: 20px;
+    margin: 0;
+    padding-left: 20px;
+  }
 }
 
 .date {
