@@ -186,9 +186,10 @@ nav {
   li {
     display: inline-block;
     margin-right: 20px;
+    vertical-align: middle;
 
     &:first-child {
-      font-size: 1.5em;
+      font-size: 2em;
       font-weight: bold;
     }
   }
@@ -282,6 +283,12 @@ footer {
 }
 
 @media only screen and (max-width:400px){
+  nav {
+    li:first-child {
+      font-size: 1.5em;
+    }
+  }
+
   main {
     p {
       font-size: 1em;
