@@ -223,11 +223,23 @@ header {
 // MAIN {{{
 
 main {
+  animation: fadein .5s;
   display: block;
   flex: 1;
   margin: 30px auto 0;
   max-width: $body-margin;
   width: $body-width;
+}
+
+@keyframes fadein {
+  from {
+    margin-top: 5%;
+    opacity: 0;
+  }
+
+  to   {
+    opacity: 1;
+  }
 }
 
 // }}}
