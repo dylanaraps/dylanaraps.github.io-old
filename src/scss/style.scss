@@ -12,6 +12,8 @@ $magic-margin: 1.63em;
 $blockquote-border-color: #ccc;
 $blockquote-text-color: #555;
 
+$code-bg-color: #eee;
+
 $link-color: #344a91;
 $link-color2: #34917b;
 $link-color3: #fff;
@@ -134,6 +136,11 @@ a {
   margin: 0 0 0 5px;
 }
 
+.code {
+  background: $code-bg-color;
+  padding: 5px;
+}
+
 // }}}
 
 // IMAGES {{{
@@ -206,7 +213,7 @@ main {
   animation: fadein .5s;
   display: block;
   flex: 1;
-  margin: 30px auto 0;
+  margin: 30px auto;
   max-width: $body-margin;
   width: $body-width;
 
