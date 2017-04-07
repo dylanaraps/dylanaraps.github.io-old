@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        @@include('../includes/head.html', {
+            "title": "Dylan Araps - Rice",
+            "description": "The personal website of Dylan Araps, author of Neofetch, wal and other projects."
+        })
+    </head>
+
+    <body class="site">
+        @@include('../includes/nav.html')
+        @@include('../includes/header.html', {
+            "title": "",
+            "background": "/img/rice/0117/12.png",
+            "position": "center 25%"
+        })
+
+        <main class="site-content">
+            <h1>Rice</h1>
+
+            @@include('../includes/rice.html', {
+                "title": "January 2017",
+                "date": "06/04/2017",
+                "url": "../pages/rice/0117",
+                "background": "../../img/rice/0117/34.png"
+            })
+
+            @@include('../includes/rice.html', {
+                "title": "December 2016",
+                "date": "06/04/2017",
+                "url": "../pages/rice/1216",
+                "background": "../../img/rice/1216/13.png"
+            })
+        </main>
+
+        @@include('../includes/footer.html')
+    </body>
+</html>

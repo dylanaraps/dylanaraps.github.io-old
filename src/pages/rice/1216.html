@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        @@include('../../includes/head.html', {
+            "title": "Dylan Araps - 1216",
+            "description": "The personal website of Dylan Araps, author of Neofetch, wal and other projects."
+        })
+    </head>
+
+    <body class="site">
+        @@include('../../includes/nav.html')
+        @@include('../../includes/header.html', {
+            "title": "",
+            "background": "/img/rice/1216/12.png",
+            "position": "center 25%"
+        })
+
+        <main class="site-content">
+            <h1>Rice 1216</h1>
+
+            @@for (var i = 1; i < 23; i++) {
+                <a href="/img/rice/1216/`+[i]+`.png">
+                    <img class="rice-img" src="/img/rice/1216/`+[i]+`.png" alt="🍙">
+                </a>
+            }
+        </main>
+
+        @@include('../../includes/footer.html')
+    </body>
+</html>
