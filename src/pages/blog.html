@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        @@include('../includes/head.html', {
+            "title": "Dylan Araps - Blog",
+            "description": "The personal website of Dylan Araps, author of Neofetch, wal and other projects."
+        })
+    </head>
+
+    <body class="site">
+        @@include('../includes/nav.html')
+        @@include('../includes/header.html', {
+            "title": "",
+            "background": "../../img/brisbane.png",
+            "position": ""
+        })
+
+        <main class="site-content">
+            <h1>Blog</h1>
+
+            @@include('../includes/article.html', {
+                "title": "Website CSS Test",
+                "date": "06/04/2017",
+                "url": "../pages/blog/css"
+            })
+        </main>
+
+        @@include('../includes/footer.html')
+    </body>
+</html>
