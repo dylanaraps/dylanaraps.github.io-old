@@ -191,6 +191,7 @@ nav {
 // HEADER {{{
 
 header {
+  animation: fadein .3s;
   background-position: center center;
   background-size: cover;
   height: $header-height;
@@ -210,7 +211,7 @@ header {
 // MAIN {{{
 
 main {
-  animation: fadein .5s;
+  animation: slideup .5s;
   display: block;
   flex: 1;
   margin: 30px auto;
@@ -302,9 +303,19 @@ footer {
 
 // ANIMATIONS {{{
 
-@keyframes fadein {
+@keyframes slideup {
   from {
     margin-top: 5%;
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
     opacity: 0;
   }
 
