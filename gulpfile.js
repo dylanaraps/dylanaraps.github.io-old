@@ -21,6 +21,7 @@ gulp.task('html', function() {
         .pipe(rename({extname: ''}))
         .pipe(sitemap({
             siteUrl: 'https://dylanaraps.com',
+            fileName: 'sitemap.xml',
             changefreq: 'daily'
         }))
         .pipe(gulp.dest('./'))
@@ -56,8 +57,7 @@ gulp.task('img', function() {
 });
 
 gulp.task('sitemap', function() {
-    gulp.src('./sitemap.xml')
-        exec('sed -ie s/index// sitemap.xml');
+    exec('sed -i "" -e "s/index//" sitemap.xml');
 });
 
 gulp.task('watch', function() {
