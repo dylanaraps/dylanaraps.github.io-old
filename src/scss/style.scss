@@ -140,7 +140,7 @@ a {
   color: $article-date-color;
   font-size: 12px;
   font-weight: normal;
-  margin: 0 0 0 5px;
+  margin: 10px 0 0 0;
 }
 
 .code {
@@ -148,9 +148,18 @@ a {
   padding: 5px;
 }
 
+code {
+  display: block;
+  white-space: pre-wrap;
+}
+
 // }}}
 
 // IMAGES {{{
+
+img {
+  width: 100%;
+}
 
 .responsive {
   display: block;
