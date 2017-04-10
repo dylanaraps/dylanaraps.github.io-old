@@ -314,6 +314,7 @@ footer {
   animation: flip .5s linear alternate infinite;
   background-position: center center;
   background-size: cover;
+  transition: none;
 
   h1 {
     background-color: $body-text-color;
