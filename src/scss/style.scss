@@ -107,9 +107,12 @@ p,
 a,
 ul,
 ol,
-li,
-blockquote {
+li {
   font-family: Verdana,Geneva,sans-serif;
+}
+
+blockquote {
+  font-family: monospace;
 }
 
 // }}}
