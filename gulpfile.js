@@ -1,4 +1,7 @@
 var gulp         = require('gulp');
+var save         = require('gulp-save');
+var rename       = require('gulp-rename');
+var sitemap      = require('gulp-sitemap');
 var fileinclude  = require('gulp-file-include');
 var autoprefixer = require('gulp-autoprefixer');
 var concatcss    = require('gulp-concat-css');
@@ -9,10 +12,19 @@ var imagemin     = require('gulp-imagemin');
 var mozjpeg      = require('imagemin-mozjpeg');
 var pngquant     = require('imagemin-pngquant');
 var browsersync  = require('browser-sync').create();
+var exec         = require('child_process').exec;
 var reload       = browsersync.reload;
 
 gulp.task('html', function() {
-    gulp.src(['./src/**/*.html', '!./src/includes/*.html'])
+    gulp.src(['./src/**/*.html', '!./src/includes/*.html'], {read: false})
+        .pipe(save('before-sitemap'))
+        .pipe(rename({extname: ''}))
+        .pipe(sitemap({
+            siteUrl: 'https://dylanaraps.com',
+            changefreq: 'daily'
+        }))
+        .pipe(gulp.dest('./'))
+        .pipe(save.restore('before-sitemap'))
         .pipe(fileinclude({
            prefix: '@@',
            basepath: '@file',
@@ -43,11 +55,17 @@ gulp.task('img', function() {
         .pipe(gulp.dest('./img'));
 });
 
+gulp.task('sitemap', function() {
+    gulp.src('./sitemap.xml')
+        exec('sed -ie s/index// sitemap.xml');
+});
+
 gulp.task('watch', function() {
 	gulp.watch('src/**/*.html', ['html']).on("change", reload);
 	gulp.watch('src/templates/*.html', ['html']).on("change", reload);
 	gulp.watch('src/scss/**/*.scss', ['css']);
 	gulp.watch('src/images/**/*', ['img']);
+	gulp.watch('./sitemap.xml', ['sitemap']);
 });
 
 gulp.task('browser-sync', function() {
@@ -61,4 +79,4 @@ gulp.task('browser-sync', function() {
     });
 });
 
-gulp.task('default', ['html', 'css', 'img', 'watch', 'browser-sync']);
+gulp.task('default', ['html', 'css', 'img', 'sitemap', 'watch', 'browser-sync']);
