@@ -36,6 +36,15 @@ $footer-height: 100px;
 
 // MIXINS {{{
 
+@mixin pixelated {
+  image-rendering: -webkit-optimize-contrast; // Safari 6, UC Browser 9.9
+  image-rendering: -webkit-crisp-edges; // Safari 7+
+  image-rendering: -moz-crisp-edges; // Firefox 3.6+
+  image-rendering: -o-crisp-edges; // Opera 12
+  image-rendering: pixelated; // Chrome 41+ and Opera 26+
+  -ms-interpolation-mode: nearest-neighbor; // IE 7+ (non-standard property)
+}
+
 @mixin ghost-button($width, $color, $color2) {
   border: 2px solid $color;
   color: $color;
@@ -159,6 +168,10 @@ code {
 
 img {
   width: 100%;
+}
+
+.pixelated {
+  @include pixelated;
 }
 
 .responsive {
