@@ -308,6 +308,28 @@ footer {
 
 // }}}
 
+// DANCING QUEEN {{{
+
+.dancing-queen {
+  animation: flip .5s linear alternate infinite;
+  background-position: center center;
+  background-size: cover;
+
+  h1 {
+    background-color: $body-text-color;
+    border: 0;
+    color: $header-text-color;
+    font-family: 'Comic Sans MS';
+    opacity: .7;
+    position: relative;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+// }}}
+
 // ANIMATIONS {{{
 
 @keyframes slideup {
@@ -328,6 +350,16 @@ footer {
 
   to {
     opacity: 1;
+  }
+}
+
+@keyframes flip {
+  from {
+    background-image: url('/img/abba.jpg');
+  }
+
+  to {
+    background-image: url('/img/abba2.jpg');
   }
 }
 
