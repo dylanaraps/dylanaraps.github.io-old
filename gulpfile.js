@@ -16,7 +16,7 @@ var exec         = require('child_process').exec;
 var reload       = browsersync.reload;
 
 gulp.task('html', function() {
-    gulp.src(['./src/**/*.html', '!./src/includes/*.html'], {read: false})
+    gulp.src(['./src/**/*.html', '!./src/includes/*.html'])
         .pipe(save('before-sitemap'))
         .pipe(rename({extname: ''}))
         .pipe(sitemap({
