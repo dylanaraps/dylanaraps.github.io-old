@@ -20,22 +20,11 @@
 
             @@for (var i = 1; i < 51; i++) {
                 <a href="/img/rice/0117/`+[i]+`.png">
-                    <img class="rice-img" src="" data-src="/img/rice/0117/`+[i]+`.png" alt="🍙"/>
+                    <img class="rice-img" src="/img/rice/0117/`+[i]+`.png" alt="🍙">
                 </a>
             }
         </main>
 
         @@include('../../includes/footer.html')
-
-        <script>
-            window.addEventListener('load', function(){
-                var allimages= document.getElementsByTagName('img');
-                for (var i=0; i<allimages.length; i++) {
-                    if (allimages[i].getAttribute('data-src')) {
-                        allimages[i].setAttribute('src', allimages[i].getAttribute('data-src'));
-                    }
-                }
-            }, false)
-        </script>
     </body>
 </html>
