@@ -166,7 +166,8 @@ code {
 
 // IMAGES {{{
 
-img {
+img,
+video {
   width: 100%;
 }
 
@@ -207,6 +208,10 @@ nav {
     &:first-child {
       font-size: 2em;
       font-weight: bold;
+    }
+
+    &:last-child {
+      margin-right: none;
     }
   }
 
