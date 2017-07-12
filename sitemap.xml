@@ -17,7 +17,7 @@
     </url>
     <url>
         <loc>https://dylanaraps.com/pages/rice</loc>
-        <lastmod>2017-07-09T02:15:04.742Z</lastmod>
+        <lastmod>2017-07-12T01:09:51.538Z</lastmod>
         <changefreq>daily</changefreq>
     </url>
     <url>
@@ -38,6 +38,11 @@
     <url>
         <loc>https://dylanaraps.com/pages/rice/1216</loc>
         <lastmod>2017-07-09T02:16:34.572Z</lastmod>
+        <changefreq>daily</changefreq>
+    </url>
+    <url>
+        <loc>https://dylanaraps.com/pages/rice/l1</loc>
+        <lastmod>2017-07-12T01:11:47.234Z</lastmod>
         <changefreq>daily</changefreq>
     </url>
 </urlset>
